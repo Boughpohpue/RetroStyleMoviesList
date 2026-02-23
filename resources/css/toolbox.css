@@ -205,10 +205,11 @@
 }
 .toolboxScrollTopButton:hover {
 	transform: scale(1.15);
-	filter: brightness(1.11);
+	filter: brightness(1.23);
 	transition: all 0.33s ease-in;
 }
 .toolboxScrollTopButton.disabled {
+	transform: scale(1.0);
 	cursor: default;
 	filter: brightness(0.69);
 }
@@ -241,7 +242,7 @@
 }
 .toolboxScrollUpButton:hover {
 	transform: scale(1.15);
-	filter: brightness(1.11);
+	filter: brightness(1.23);
 	transition: all 0.33s ease-in;
 }
 .toolboxScrollUpButton.disabled {
@@ -277,7 +278,7 @@
 }
 .toolboxScrollDownButton:hover {
 	transform: scale(1.15);
-	filter: brightness(1.11);
+	filter: brightness(1.23);
 	transition: all 0.33s ease-in;
 }
 .toolboxScrollDownButton.disabled {
@@ -306,17 +307,18 @@
 	cursor: pointer;
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
-	background-image: url("../img/top.png");
+	background-image: url("../img/bottom.png");
 	filter: brightness(1.0);
 	transform: scale(1);
 	transition: all 0.33s ease-out;
 }
 .toolboxScrollBottomButton:hover {
 	transform: scale(1.15);
-	filter: brightness(1.11);
+	filter: brightness(1.23);
 	transition: all 0.33s ease-in;
 }
 .toolboxScrollBottomButton.disabled {
+	transform: scale(1);
 	cursor: default;
 	filter: brightness(0.69);
 }

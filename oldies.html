@@ -71,14 +71,19 @@
           </div>
       </div>
 
+      <script src="resources/js/translator.js"></script>
+      <script src="resources/js/scrollStep.js"></script>
       <script src="resources/js/window.js"></script>
       <script src="resources/js/toolbox.js"></script>
       <script src="resources/js/shelf.js"></script>
       <script src="resources/js/movie.js"></script>
       <script>
-        printInfoToLog();
         $(document).ready(function () {
+          printInfoToLog();
           handleScale();
+          $.getJSON('resources/locale/uiTranslations.json', function (data) {
+              fetchUiTranslations(data);
+          });
           $.getJSON('data/movies.json', function (data) {
               fetchMovies(data.movies, $("#Shelf"));
               registerScrolling();

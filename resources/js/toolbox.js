@@ -6,6 +6,9 @@ $("#LanguageButton").click(function () {
 		$(this).toggleClass("on");
 	});
 	$(this).toggleClass("disabled");
+	$("#SearchPhrase").attr("placeholder",
+		translateUiText("SearchPhrasePlaceholder",
+			$("#SearchPhrase").attr("placeholder")));
 });
 $("#ScrollTopButton").click(function () {
 	scrollToTop();
