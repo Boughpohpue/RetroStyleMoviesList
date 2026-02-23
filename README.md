@@ -1,8 +1,6 @@
 # RETRO-STYLE MOVIE LIST
 
-Oldschool looking movies collection presented as a shelf with VHS tapes.
-
-Designed and coded just for fun.
+Oldschool looking movies collection presented as a shelf with VHS tapes. Designed and coded just for fun :)
 
 
 ## INFO
