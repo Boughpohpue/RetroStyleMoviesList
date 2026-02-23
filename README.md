@@ -1,8 +1,6 @@
 # RETRO-STYLE MOVIE LIST
 
-Oldschool look for displaying movies collection as a shelf of VHS tapes.
-
-Designed and coded just for fun.
+Oldschool looking movies collection presented as a shelf with VHS tapes. Designed and coded just for fun :)
 
 
 ## INFO
@@ -13,11 +11,6 @@ Designed and coded just for fun.
 * Scrolling with different speeds (keyboard: HOME/END, PAGE UP/DOWN, ARROW UP/DOWN).
 * Each movie can be linked to proper imdb page, clicking on the title opens popup window.
 * Filtering by movie title (original and localized).
-
-
-# SCREENSHOT
-
-![alt text](https://boughpohpue.github.io/RetroStyleMoviesList/screenshots/retro_movies_list_screen.png)
 
 
 ## DEMO
