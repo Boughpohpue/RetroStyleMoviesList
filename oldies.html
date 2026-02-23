@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <title>RETRO-STYLE MOVIES LIST</title>
+
+      <link rel="shortcut icon" href="resources/ico/vhs.ico">
+      <link rel="stylesheet" href="resources/css/fonts.css" />
+      <link rel="stylesheet" href="resources/css/main.css" />
+      <link rel="stylesheet" href="resources/css/modal.css" />
+      <link rel="stylesheet" href="resources/css/modals.css" />
+      <link rel="stylesheet" href="resources/css/toolbox.css" />
+      <link rel="stylesheet" href="resources/css/vhs.css" />
+      <link rel="stylesheet" href="resources/css/shelf.css" />
+      <link rel="stylesheet" href="resources/css/spinner.css" />
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+      <script src="resources/js/ajaxService.js"></script>
+      <script src="resources/js/movieLoader.js"></script>
+  </head>
+
+  <body class="dim" oncontextmenu="return false;">
+
+      <div id="SpinnerModal" class="modal spinner active">
+          <div class="lds-spinner">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+          </div>
+      </div>
+
+      <div id="PosterModal" class="modal poster">
+          <img id="PosterImage" class="posterImage" crossorigin="anonymous" src="" />
+      </div>
+
+      <div id="TrailerModal" class="modal trailer">
+          <video id="TrailerVideo" class="trailerVideo" crossorigin="anonymous" type="video/mp4" src="">
+          </video>
+      </div>
+
+      <div id="Toolbox" class="toolbox">
+          <div id="LanguageButton" class="toolboxLanguageButton disabled"></div>
+          <div id="SearchBox" class="toolboxSearch">
+              <input type="text" id="SearchPhrase" name="SearchPhrase" class="toolboxSearchTextBox" required
+                  pattern=".{1,10}" maxlength="12" placeholder="search title..." />
+              <div id="ClearButton" class="toolboxClearButton"></div>
+              <input id="filterOn" name="filterOn" type="hidden" value="0" />
+          </div>
+          <div id="NavigationBox" class="toolboxNavigation">
+              <div id="ScrollBottomButton" class="toolboxScrollBottomButton"></div>
+              <div id="ScrollDownButton" class="toolboxScrollDownButton"></div>
+              <div id="ScrollUpButton" class="toolboxScrollUpButton"></div>
+              <div id="ScrollTopButton" class="toolboxScrollTopButton"></div>
+          </div>
+      </div>
+
+      <div id="ShelfContainer" class="shelfContainer">
+          <div id="Shelf" class="shelf">
+          </div>
+      </div>
+
+      <script src="resources/js/window.js"></script>
+      <script src="resources/js/toolbox.js"></script>
+      <script src="resources/js/shelf.js"></script>
+      <script src="resources/js/movie.js"></script>
+      <script>
+        printInfoToLog();
+        $(document).ready(function () {
+          handleScale();
+          $.getJSON('data/movies.json', function (data) {
+              fetchMovies(data.movies, $("#Shelf"));
+              registerScrolling();
+          });
+        });
+      </script>
+
+  </body>
+
+</html>

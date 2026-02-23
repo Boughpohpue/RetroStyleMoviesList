@@ -1,0 +1,14 @@
+movies.json item description:
+
+"mdbId":  "tt0046534"                         - movie imdb id
+"year":   1953                                - movie production year
+"title":  "The War of the Worlds"             - movie original title
+"title2": "Wojna światów"                     - movie localized title
+"path":   "[1953] The War of the Worlds.mp4"  - movie filename
+"front":  "14"                                - movie VHS front image id
+"s1a":    264                                 - sticker 1 angle
+"s2a":    272                                 - sticker 2 angle
+"s3a":    271                                 - sticker 3 angle
+"s1c":    "black"                             - sticker 1 color
+"s2c":    "black"                             - sticker 2 color
+"s3c":    "black"                             - sticker 3 color

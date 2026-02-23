@@ -1,0 +1,64 @@
+* {
+	box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+	width: 0; /* Remove scrollbar space */
+	background: transparent; /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+	background: transparent;
+}
+
+input[type="text"] {
+	/* font-size: 1.85vh; */
+}
+
+html {
+	display: block;
+	margin: auto;
+	height: 100%;
+	overflow: hidden;
+	overflow-x: hidden;
+}
+body {
+	display: block;
+	min-width: 600px;
+	width: auto !important;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(
+		90deg,
+		rgba(60, 60, 60, 1) 0%,
+		rgba(90, 90, 90, 1) 49%,
+		rgba(60, 60, 60, 1) 100%
+	);
+}
+
+body.dim {
+	background: linear-gradient(
+		90deg,
+		rgba(3, 3, 3, 1) 0%,
+		rgba(72, 72, 72, 1) 49%,
+		rgba(3, 3, 3, 1) 100%
+	);
+}
+
+a {
+	outline: 0;
+	border: none;
+	text-align: center;
+	color: black;
+	text-decoration: none;
+	-moz-outline-style: none;
+}
+a:active,
+a:focus {
+	outline: 0;
+	border: none;
+	text-align: center;
+	color: black;
+	text-decoration: none;
+	-moz-outline-style: none;
+}
