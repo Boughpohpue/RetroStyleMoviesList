@@ -15,11 +15,6 @@ Designed and coded just for fun.
 * Filtering by movie title (original and localized).
 
 
-# SCREENSHOT
-
-![alt text](https://boughpohpue.github.io/RetroStyleMoviesList/screenshots/retro_movies_list_screen.png)
-
-
 ## DEMO
 
 Follow the link below to see demo
